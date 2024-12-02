@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Password Manager</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Password Manager</h1>
+    </header>
+    <main>
+      <section id="password-form">
+        <h2>Add a New Password</h2>
+        <form id="add-password-form">
+          <label for="website">Website:</label>
+          <input type="text" id="website" name="website" required />
+
+          <label for="username">Username:</label>
+          <input type="text" id="username" name="username" required />
+
+          <label for="password">Password:</label>
+          <input type="password" id="password" name="password" required />
+
+          <button type="submit">Add Password</button>
+        </form>
+      </section>
+      <section id="password-list">
+        <h2>Saved Passwords</h2>
+        <table>
+          <thead>
+            <tr>
+              <th>Website</th>
+              <th>Username</th>
+              <th>Password</th>
+              <th>Actions</th>
+            </tr>
+          </thead>
+          <tbody id="password-table-body">
+            <!-- Password entries will be added here dynamically -->
+          </tbody>
+        </table>
+      </section>
+    </main>
+    <script src="script.js"></script>
+  </body>
+</html>
